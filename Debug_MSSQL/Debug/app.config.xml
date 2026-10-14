@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<AppConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Database conString="7oSjCOB7yMIddhwQx01CJbBt0tgkFU+X/Tp2I9puExis9KFEHdnw2G4jJ7VCGZJXoOtdbmzKciSX+z+DeOGb1QgFDjw5nR3oxaHx0LKfwekLTB9vKC2nH2z/9dQhH1Yogqv8fPf5Z9SCdb5ODliC2ZWWCg/725D8+J01E9DXJ6U=" />
+  <ImageStorage mode="binary" />
+  <DateFilter enable="false" />
+  <ShowIncome enable="false" />
+  <ShowAllDay enable="false" />
+  <CameraViewer>
+    <MainWindow x="-4" y="-4" width="1544" height="832" />
+    <View cameraBar="true" cameraBarWidth="192" invertDisplayMode="true" />
+    <ImageIn timeout="5" />
+    <ImageOut timeout="3" />
+  </CameraViewer>
+  <AutoOpenView enable="true" />
+  <FeeSpeech enable="false" />
+  <SwipePorts>
+    <SwipePort port="COM7" mode="inout" timeout="100" group="motorbike" />
+  </SwipePorts>
+  <SkipConsecutiveSwipeOnSameCard>
+    <Policies>
+      <Policy cardType="VeThang1" timeout="6000" />
+    </Policies>
+  </SkipConsecutiveSwipeOnSameCard>
+  <DataPorts>
+    <DataPort port="COM25" data="?command?Cfee#" command="3T01" attachTo="COM7,COM15" />
+    <DataPort port="COM25" data="fee" attachTo="COM15" />
+  </DataPorts>
+  <Backup path="D:\" />
+  <CardApi readUrl="https://tienichcongcong.vn/api/get_v2.php?key=0919669444&amp;status=yes" writeUrl="https://tienichcongcong.vn/api/set_v2.php?key=0919669444&amp;cardnumber=xxxxx&amp;status=null" autoUpdate="false" autoUpdateInterval="1" />
+  <CardConfirmDelay timeout="100" />
+  <CardReader format="MIXED" />
+  <Audios>
+    <Audio name="in" file="audio\ai-tts\in_1.1x.mp3" />
+    <Audio name="out" file="audio\ai-tts\out_1.1x.mp3" />
+    <Audio name="locked" file="audio\ai-tts\locked_1.1x.mp3" />
+    <Audio name="inused" file="audio\ai-tts\inused_1.1x.mp3" />
+    <Audio name="notused" file="audio\ai-tts\notused_1.1x.mp3" />
+    <Audio name="notfound" file="audio\ai-tts\notfound_1.1x.mp3" />
+    <Audio name="outlprfailed" file="audio\ai-tts\outlprfailed_1.1x.mp3" />
+    <Audio name="tobeexpired" file="audio\ai-tts\tobeexpired_1.1x.mp3" />
+    <Audio name="info" file="audio\ai-tts\info_1.1x.mp3" />
+    <Audio name="0" file="audio\ai-tts\0_1.1x.mp3" />
+    <Audio name="1" file="audio\ai-tts\1_1.1x.mp3" />
+    <Audio name="2" file="audio\ai-tts\2_1.1x.mp3" />
+    <Audio name="3" file="audio\ai-tts\3_1.1x.mp3" />
+    <Audio name="4" file="audio\ai-tts\4_1.1x.mp3" />
+    <Audio name="5" file="audio\ai-tts\5_1.1x.mp3" />
+    <Audio name="6" file="audio\ai-tts\6_1.1x.mp3" />
+    <Audio name="7" file="audio\ai-tts\7_1.1x.mp3" />
+    <Audio name="8" file="audio\ai-tts\8_1.1x.mp3" />
+    <Audio name="9" file="audio\ai-tts\9_1.1x.mp3" />
+    <Audio name="ten" file="audio\ai-tts\ten_1.1x.mp3" />
+    <Audio name="xteen" file="audio\ai-tts\xteen_1.1x.mp3" />
+    <Audio name="hundred" file="audio\ai-tts\hundred_1.1x.mp3" />
+    <Audio name="thousand" file="audio\ai-tts\thousand_1.1x.mp3" />
+    <Audio name="million" file="audio\ai-tts\million_1.1x.mp3" />
+    <Audio name="unitonly" file="audio\ai-tts\unitonly_1.1x.mp3" />
+    <Audio name="fivealt" file="audio\ai-tts\fivealt_1.1x.mp3" />
+    <Audio name="currency" file="audio\ai-tts\currency_1.1x.mp3" />
+    <Audio name="warn" file="audio\ai-tts\warn_1.1x.mp3" />
+    <Audio name="plateduplicated" file="audio\ai-tts\plateduplicated_1.1x.mp3" />
+    <Audio name="wrongport" file="audio\ai-tts\wrongport_1.1x.mp3" />
+  </Audios>
+  <LprTolerance value="0" />
+  <InOutConfs>
+    <InOutConf cardType="XeMayThang">
+      <InConf>
+        <Lpr enable="false" confirmOnMatch="true" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="1" />
+        </BarrierRefs>
+      </InConf>
+      <OutConf>
+        <Lpr enable="true" confirmOnMatch="true" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="1" />
+        </BarrierRefs>
+      </OutConf>
+    </InOutConf>
+    <InOutConf cardType="XeMay">
+      <InConf>
+        <Lpr enable="true" confirmOnMatch="true" />
+        <Confirm key="" warnOnEmpty="false" />
+        <BarrierRefs>
+          <BarrierRef id="2" />
+        </BarrierRefs>
+      </InConf>
+      <OutConf>
+        <Lpr enable="true" confirmOnMatch="true" />
+        <Confirm key="" warnOnEmpty="false" />
+        <BarrierRefs>
+          <BarrierRef id="2" />
+        </BarrierRefs>
+      </OutConf>
+    </InOutConf>
+    <InOutConf cardType="NhanVien">
+      <InConf>
+        <Lpr enable="false" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="1" />
+        </BarrierRefs>
+      </InConf>
+      <OutConf>
+        <Lpr enable="false" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="2" />
+        </BarrierRefs>
+      </OutConf>
+    </InOutConf>
+    <InOutConf cardType="VeThang1">
+      <InConf>
+        <Lpr enable="false" confirmOnMatch="false" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="7" />
+        </BarrierRefs>
+      </InConf>
+      <OutConf>
+        <Lpr enable="false" confirmOnMatch="true" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="8" />
+        </BarrierRefs>
+      </OutConf>
+    </InOutConf>
+    <InOutConf cardType="VeThang2">
+      <InConf>
+        <Lpr enable="false" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="9" />
+        </BarrierRefs>
+      </InConf>
+      <OutConf>
+        <Lpr enable="false" />
+        <Confirm key="" />
+        <BarrierRefs>
+          <BarrierRef id="10" />
+        </BarrierRefs>
+      </OutConf>
+    </InOutConf>
+  </InOutConfs>
+  <Barriers>
+    <Barrier id="1" port="COM19" openCommand="RYA1000000005" closeCommand="3T000010" />
+    <Barrier id="2" port="TCP:192.168.1.5:2000" openCommand="&lt;02&gt;RYA&lt;02&gt;" closeCommand="3T000020" />
+    <Barrier id="3" port="COM23" openCommand="3T000031" closeCommand="3T000030" />
+    <Barrier id="4" port="COM23" openCommand="3T000041" closeCommand="3T000040" />
+    <Barrier id="5" port="COM23" openCommand="3T000051" closeCommand="3T000050" />
+    <Barrier id="6" port="COM23" openCommand="3T000061" closeCommand="3T000060" />
+    <Barrier id="7" port="COM23" openCommand="3T000071" closeCommand="3T000070" />
+    <Barrier id="8" port="COM23" openCommand="3T000081" closeCommand="3T000080" />
+    <Barrier id="9" port="COM23" openCommand="3T000091" closeCommand="3T000090" />
+    <Barrier id="10" port="COM23" openCommand="3T000101" closeCommand="3T000100" />
+  </Barriers>
+  <DirectionCommand enable="true">
+    <CommandPort port="COM23" />
+    <Commands>
+      <Command text="3T00000I" mode="in" />
+      <Command text="3T00000O" mode="out" />
+      <Command text="3T0000IO" mode="inout" />
+      <Command text="3T0000IO" mode="in-out" />
+      <Command text="3T0000OI" mode="out-in" />
+      <Command text="3T0000II" mode="in-in" />
+      <Command text="3T0000OO" mode="out-out" />
+    </Commands>
+  </DirectionCommand>
+  <Printer enable="true">
+    <Format>
+      <Font name="Consolas" size="6" />
+      <Margins top="10" left="10" />
+    </Format>
+    <CardBill>
+      <CardTypes>
+        <CardType>XeMay</CardType>
+      </CardTypes>
+    </CardBill>
+  </Printer>
+  <Logging enable="false" />
+  <Voucher enable="false" key="a" cancelKey="a" />
+</AppConfig>
